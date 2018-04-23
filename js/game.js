@@ -44,10 +44,11 @@ DragonRun.Game.prototype = {
                 this.wrapping = false;
             }
 
-            if(this.cursors.up.isDown && !this.player.isJumping){
+            if(( this.game.input.activePointer.isDown || this.cursors.up.isDown) && !this.player.isJumping){
                 this.player.body.velocity.y = -200;
                 this.player.isJumping = true;
             }
+            
             this.game.world.wrap(this.player, -(this.game.width/2), false, true, false);
         }
     }
