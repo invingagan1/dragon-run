@@ -11,6 +11,7 @@ DragonRun.Preload.prototype = {
         //load game assets
         this.load.image('grass','assets/floor.png');
         this.load.image('player','assets/runner.png')
+        this.load.spritesheet('player_walk', 'assets/run.png',32,64,6);
     },
     create: function () {
         this.state.start('Game');   
