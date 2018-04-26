@@ -5,7 +5,7 @@ DragonRun.Boot.prototype = {
         this.load.image('preloadbar','assets/loading.jpg')
     },
     create: function () {
-        this.game.stage.backgroundColor = '#5555ff';
+        // this.game.stage.backgroundColor = '#5555ff';
         this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
         //have the game centered horizontally
         this.scale.pageAlignHorizontally = true;

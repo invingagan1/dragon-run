@@ -12,6 +12,8 @@ DragonRun.Game.prototype = {
     create: function () {
         this.game.world.setBounds(0, 0, 35000, this.game.height);
 
+        this.bg = this.add.tileSprite(0, 0, this.game.world.width, this.game.world.height,'bg');
+        
         this.grass = this.add.tileSprite(0, this.game.height - 70, this.game.world.width, 70, 'grass');
 
         this.player = this.game.add.sprite(20, this.game.height - 150, 'player_walk');

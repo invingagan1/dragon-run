@@ -15,6 +15,7 @@ DragonRun.Preload.prototype = {
         this.load.spritesheet('food','assets/food.png',32,32,5);
         this.load.image('crate', 'assets/crate-small.png');
         this.load.image('stone', 'assets/mushroom.png');
+        this.load.image('bg','assets/bg.png');
     },
     create: function () {
         this.state.start('Game');   
