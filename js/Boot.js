@@ -3,8 +3,8 @@ var Phaser = Phaser || {};
 DragonRun.Boot = function () { }
 DragonRun.Boot.prototype = {
     preload: function () {
-        this.load.image('game','assets/player/up.png')
-        this.load.image('preloadbar','assets/loading.jpg')
+        this.load.image('game','assets/player/up.png');
+        this.load.image('preloadbar','assets/loading.jpg');
     },
     create: function () {
         // this.game.stage.backgroundColor = '#5555ff';
