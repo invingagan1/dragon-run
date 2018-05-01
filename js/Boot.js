@@ -1,7 +1,9 @@
 var DragonRun = DragonRun || {};
+var Phaser = Phaser || {};
 DragonRun.Boot = function () { }
 DragonRun.Boot.prototype = {
     preload: function () {
+        this.load.image('game','assets/player/up.png')
         this.load.image('preloadbar','assets/loading.jpg')
     },
     create: function () {
